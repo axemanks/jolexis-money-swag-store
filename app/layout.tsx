@@ -6,6 +6,8 @@ import DrawerButton from '@/components/DrawerButton'
 import Sidebar from '@/components/Sidebar'
 import Header from '@/components/header/Header'
 
+import { SpeedInsights } from "@vercel/speed-insights/next" // vercel speed insights
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
