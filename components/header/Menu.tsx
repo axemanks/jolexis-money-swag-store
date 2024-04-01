@@ -46,7 +46,7 @@ const Menu = () => {
 
                 {/* sun icon */}
                 <svg
-                  className="swap-on fill-current w-10 h-10"
+                  className="swap-on fill-current w-6 h-6 mt-3 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
@@ -55,7 +55,7 @@ const Menu = () => {
 
                 {/* moon icon */}
                 <svg
-                  className="swap-off fill-current w-10 h-10"
+                  className="swap-off fill-current w-6 h-6 mt-3 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                 >
