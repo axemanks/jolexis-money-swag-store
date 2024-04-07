@@ -7,6 +7,7 @@ import Sidebar from '@/components/Sidebar'
 import Header from '@/components/header/Header'
 
 import { SpeedInsights } from "@vercel/speed-insights/next" // vercel speed insights
+import { Analytics } from "@vercel/analytics/react" // vercel analytics
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,8 @@ export default function RootLayout({
               <div className="min-h-screen flex flex-col">
                 <Header />
                 {children}
+                <Analytics />
+                <SpeedInsights />
                 <footer className="footer footer-center p-4 bg-base-300 text-base-content">
                   <p>
                     Copyright © 2023 - All right reserved by Next Amazona V2
