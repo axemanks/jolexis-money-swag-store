@@ -25,7 +25,7 @@ const Header = () => {
               </svg>
             </label>
             <Link href="/" className="btn btn-ghost text-lg">
-              Swag Store
+              <p>$avvy&apos;$ World</p>
             </Link>
           </div>
 

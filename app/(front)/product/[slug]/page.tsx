@@ -46,6 +46,7 @@ export default async function ProductDetails({
               width: '100%',
               height: 'auto',
             }}
+            className='mask mask-squircle'
           ></Image>
         </div>
         <div>
