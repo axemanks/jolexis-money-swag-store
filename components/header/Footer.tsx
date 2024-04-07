@@ -6,7 +6,9 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className='btm-nav'>
-      <a href='#home'>
+
+
+      <Link href='#home'>
         <button className='text-primary'>
           {/* <label htmlFor='Home'>Home</label> */}
           <svg
@@ -24,26 +26,16 @@ const Footer = (props: Props) => {
             />
           </svg>
         </button>
-      </a>
+      </Link>
 
       {/* Shop */}
-      <Link href={'/search?category=all&q='}></Link>
+      <Link href={'/search?category=all&q='}>
       <button className='text-primary'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='h-5 w-5'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            strokeWidth='2'
-            d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
-          />
-        </svg>
+        <p>Shop</p>
       </button>
+      </Link>
+
+
       {/* Email / Contact */}
       <Link href={'/#contact-us'}>
         <button className='text-primary'>
