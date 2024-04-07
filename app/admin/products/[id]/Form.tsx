@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { Product } from '@/lib/models/ProductModel'
 import { formatId } from '@/lib/utils'
 import { useRouter } from 'next/navigation'
+import Image from 'next/image'
 
 export default function ProductEditForm({ productId }: { productId: string }) {
   const { data: product, error } = useSWR(`/api/admin/products/${productId}`)
@@ -126,8 +127,9 @@ export default function ProductEditForm({ productId }: { productId: string }) {
       <div>
         <form onSubmit={handleSubmit(formSubmit)}>
           <FormInput name="Name" id="name" required />
-          <FormInput name="Slug" id="slug" required />
+          {/* <FormInput name="Slug" id="slug" required /> */}
           <FormInput name="Image" id="image" required />
+          <Image src={product.image} alt="image" width={50} height={50}/>
           <div className="md:flex mb-6">
             <label className="label md:w-1/5" htmlFor="imageFile">
               Upload Image
