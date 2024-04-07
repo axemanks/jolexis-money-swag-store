@@ -45,7 +45,7 @@ const ReviewCard = ({
   rating,
   feedback,
 }: ReviewCardProps) => {
-  const [stars, setStars] = useState([]);
+  const [stars, setStars] = useState<string[]>([]);
 
   useEffect(() => {
     const fullStars = Math.floor(rating);
