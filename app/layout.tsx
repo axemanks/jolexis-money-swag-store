@@ -12,7 +12,7 @@ import { Analytics } from "@vercel/analytics/react" // vercel analytics
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Money Store',
+  title: 'Money Swag',
   description: 'Modern ECommerce Website',
 }
 
