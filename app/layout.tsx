@@ -7,7 +7,7 @@ import Sidebar from '@/components/Sidebar';
 import Header from '@/components/header/Header';
 
 import { SpeedInsights } from '@vercel/speed-insights/next'; // vercel speed insights
-import { Analytics } from '@vercel/analytics/react'; // vercel analytics
+// import { Analytics } from '@vercel/analytics/react'; // vercel analytics
 import Footer from '@/components/header/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -33,7 +33,7 @@ export default function RootLayout({
               <div className='min-h-screen flex flex-col'>
                 <Header />
                 {children}
-                <Analytics />
+                {/* <Analytics /> */}
                 <SpeedInsights />
                 <Footer />
               </div>
